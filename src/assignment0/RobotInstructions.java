@@ -13,7 +13,7 @@ public class RobotInstructions  {
 	 * For now, please accept that the instructions below cause the support.robot to
 	 * move forward, turn left, or turn right.
 	 */
-	public void act(RobotMotionAdapter robot) {
+	public void act(RobotMotionAdapter robot){
 		
 		/**
 		 * Each of the following lines of code executes in turn.  The
@@ -29,11 +29,31 @@ public class RobotInstructions  {
 		 * You will add instructions at the end of the code to cause the support.robot to move
 		 * as you desire.
 		 */
-		robot.forward(60);
-		robot.turnLeft(90);
-		robot.forward(23);
-		robot.turnRight(90);
-		robot.forward(80);
+		robot.turnRight(40);
+		robot.forward(300);
+		
+		for (int i = 0; i < 6; i++) {
+			robot.turnLeft(30);
+			robot.forward(70);
+		}
+		
+		robot.turnLeft(10);
+		robot.forward(50);
+		
+		robot.turnRight(120);
+		robot.forward(50);
+		
+		robot.turnLeft(10);
+		robot.forward(70);
+		
+	
+		for (int i = 0; i < 6; i++) {
+			robot.turnLeft(30);
+			robot.forward(70);
+		}
+		
+		robot.forward(300);
+		
 	}
 
 }
